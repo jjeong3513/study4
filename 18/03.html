@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul,li{list-style: none;}
+        h1{display: flex; }
+        ul{display: flex; justify-content: center;}
+        ul.on{display: none;}
+        #logo{width: 242px;height: 130px;margin: 10px auto;cursor: pointer}
+        .list{height: 230px;margin: 10px;display: flex;transition: all 0.8s}
+    </style>
+</head>
+<body>
+    
+    <h1 id="logo"><img src="img/coco/coco_logo.png" alt=""></h1>
+    <ul>
+        <li class="list"><img src="img/coco/image_01.png"></li>
+        <li class="list"><img src="img/coco/image_02.png"></li>
+        <li class="list"><img src="img/coco/image_03.png"></li>
+        <li class="list"><img src="img/coco/image_04.png"></li>
+        <li class="list"><img src="img/coco/image_05.png"></li>
+        <li class="list"><img src="img/coco/image_06.png"></li>
+    </ul>
+    <script>
+         const logo = document.querySelector('#logo')
+         const ul = document.querySelector('ul');
+         logo.addEventListener('click',()=>{
+         ul.classList.toggle('on')
+         }) 
+    </script>
+</body>
+</html>
